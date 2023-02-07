@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/styles/reset.css">
+
+    <link rel="stylesheet" href="../static/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/styles/main.css">
+
+    <script src="../static/lib/popper.min.js"></script>
+    <script src="../static/lib/jquery.min.js"></script>
+    <script src="../static/lib/bootstrap.min.js"></script>
+    <script src="../static/lib/bs-custom-file-input.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="jumbotron">
+            <h1 class="display-4">나홀로 링크 메모장!</h1>
+            <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다.</p>
+            <hr class="my-4">
+            <button id="toggle" class="btn btn-primary btn-sm" type="button">포스팅 박스 열기</button>
+        </div>
+        <div id="box" class="justify-content-center align-items-center d-flex">
+            <div id="inputBox" class="w-50 p-3 border rounded d-none">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">아티클 URL</label>
+                    <input id="article" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">간단 코멘트</label>
+                    <textarea id="comment" class="form-control"></textarea>
+                </div>
+                <button id="submitBtn" type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        <div class="card-columns mt-4">
+            <!-- <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title that wraps to a new line</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="../static/js/request.js"></script>
+    <script src="../static/js/card.js"></script>
+</body>
+</html>
