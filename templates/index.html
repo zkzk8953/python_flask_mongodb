@@ -13,10 +13,10 @@
     <script src="../static/lib/popper.min.js"></script>
     <script src="../static/lib/jquery.min.js"></script>
     <script src="../static/lib/bootstrap.min.js"></script>
-    <script src="../static/lib/bs-custom-file-input.min.js"></script>
 
-    <script src="../static/js/request.js"></script>
-    <script src="../static/js/card.js"></script>
+    <script src="../static/js/shared/httpService.js"></script>
+    <script src="../static/js/modules/card.js"></script>
+    <script src="../static/js/app.js"></script>
 
     <title>Document</title>
 </head>
@@ -28,8 +28,8 @@
             <hr class="my-4">
             <button id="toggle" class="btn btn-primary btn-sm" type="button">포스팅 박스 열기</button>
         </div>
-        <div id="box" class="justify-content-center align-items-center d-flex">
-            <div id="inputBox" class="w-50 p-3 border rounded d-none">
+        <div id="box" class="justify-content-center align-items-center d-none">
+            <div id="inputBox" class="w-50 p-3 border rounded">
                 <div class="form-group">
                     <label for="exampleInputEmail1">아티클 URL</label>
                     <input id="article" type="text" class="form-control">
@@ -41,14 +41,7 @@
                 <button id="submitBtn" type="button" class="btn btn-primary">Submit</button>
             </div>
         </div>
-        <div class="card-columns mt-4">
-            <!-- <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title that wraps to a new line</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-            </div> -->
+        <div id="cards-box" class="card-columns mt-4">
         </div>
     </div>
 </body>

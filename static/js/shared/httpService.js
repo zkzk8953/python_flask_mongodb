@@ -14,7 +14,7 @@ class HttpService {
         return $.ajax({
             type: method,
             url: url,
-            data: data,
+            data: data
         });
     }
 }

@@ -10,8 +10,8 @@ class Card(object):
         res = self.db.insert(card, self.collection_name)
         return 'Inserted Id ' + res  
     
-    def find(self, todo):  # find all
-        return self.db.find(todo, self.collection_name)
+    def find(self, card):  # find all
+        return self.db.find(card, self.collection_name)
 
     def find_by_id(self, id):
         return self.db.find_by_id(id, self.collection_name)
